@@ -1,1 +1,352 @@
+body {
+    background-image: url(https://img.mensxp.com/media/content/2021/Jan/heade_60053c80534d6.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+	line-height:3em;
+	overflow-y:scroll;
+    padding:0;
+    margin:0;
+}
+
+header {
+    margin:2cm;
+    background-color:lightslategrey;
+    background-blend-mode: lighten;
+    background-color:rgba(41, 78, 162, 0.8);
+    color:#fff;
+    border:1px solid black;
+    padding:1cm;
+    width:500px;
+    font-size:20px;
+    animation-name:appear;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    
+}
+
+.headstart {
+    font-size:65px;
+    padding-left:2px;
+}
+.headh1 {
+    font-size:36px;
+}
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+*{box-sizing: border-box; font-weight: normal;}
+
+.flip{position: relative; border:1px solid black;}
+.flip > .front,
+.flip > .back{
+  display: block;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-delay: 0.5s;
+  transition-property: transform, opacity;
+}
+.flip > .front{transform: rotateY(0deg);}
+.flip > .back{
+  position: absolute;
+  opacity: 0;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  transform: rotateY(-180deg);
+}
+.flip:hover > .front{transform: rotateY(180deg);}
+.flip:hover > .back{opacity: 1; transform: rotateY(0deg);}
+.flip{
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 1em;
+  width: 400px;
+}
+.flip > .front,
+.flip > .back{
+  display: block;
+  color: white;
+  width: inherit;
+  background-size: cover!important;
+  background-position: center!important;
+  height: 250px;
+  padding: 1em 2em;
+  background-color:rgba(41, 78, 162, 0.8) ;
+  border-radius: 10px;
+}
+.flip > .front p,
+.flip > .back p{
+  font-size: 0.9125rem;
+  line-height: 160%;
+  color: #fff;
+}
+
+
+
+
+
+.fadeIn {
+    
+    animation-name:appear;
+    animation-duration: 2s;
+    animation-delay:0.2s;
+    animation-iteration-count: 1;
+  }
+  
+
+
+  @keyframes appear {
+    
+    0% {
+        opacity: 0;
+        transition: 0.25s all ease-in-out;
+        transform: translate3d(-50px, 0, 0);
+        
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+  }
+
+
+  .card-head {
+    font-size:40px;
+    color:rgb(0, 0, 0);
+    font-weight:600;
+  }
+
+  .flip:hover .front {
+    opacity:0;
+    
+}
+
+.front {
+    background-color:rgba(0, 0, 0, 0.4);
+    background-blend-mode:lighten;
+}
+
+.main {
+    background-color:rgba(51, 43, 43, 0.8);
+    padding:2cm 1cm 2cm 1cm;
+    color:white;
+    
+}
+
+.front, .back {
+    padding:0.4cm;
+}
+
+.main h1 {
+    font-size:40px;
+}
+
+.flip:hover {
+    cursor:pointer;
+}
+
+
+
+
+
+.wrapper {
+  padding:5px;
+  max-width: 1200px;
+  text-align: center;
+  color:#fff;
+  margin:auto;
+  margin-bottom:1cm;
+  
+}
+
+.container {
+  width: 31%;
+  margin: 10px;
+  height: 250px;
+  border: 3px solid #eee;
+  overflow: hidden;
+  position: relative;
+  float: left;
+  display: inline-block;
+  cursor: pointer;
+}
+.child {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+.bg-one {
+  background-image: url(https://www.mediafire.com/convkey/af7f/s643va8ucpgf6oq6g.jpg);
+}
+.bg-two {
+  background-image: url(https://th.bing.com/th/id/OIP.Nx_SB3NYSbImhBMajQjzngHaEX?pid=ImgDet&w=830&h=490&rs=1);
+}
+.wrapper span {
+  display: none;
+  font-size: 24px;
+  color: #ffffff !important;
+  font-family: sans-serif;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 50px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.container:hover .child,
+.container:focus .child {
+  -ms-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.container:hover .child:before,
+.container:focus .child:before {
+  display: block;
+}
+.container:hover span,
+.container:focus span {
+  display: block;
+}
+.child:before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(52, 73, 94, 0.75);
+}
+@media screen and (max-width: 960px) {
+  .container {
+    width: 28%;
+    margin: 10px 0;
+  }
+  .wrapper {
+    padding: 10px;
+  }
+}
+
+.contact {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding:1cm;
+  color:#eee;
+}
+
+
+
+
+nav li:hover {
+	color:#abbcff;
+	border-bottom:#abbcff;
+	
+}
+
+
+
+/* https://th.bing.com/th/id/R.3bbebdb38aa03285ddbe67732915f8b5?rik=T4SFQQSmXXxEZQ&riu=http%3a%2f%2fwallpapercave.com%2fwp%2f65thfiw.png&ehk=up0SyQ4BPH6msVBIUjCFPyQ8stUbael%2fN0AgCAL92lM%3d&risl=&pid=ImgRaw&r=0 */
+
+
+
+nav {
+    height: 62px;
+    display: flex;
+    align-items: center;
+    position: center;
+    color: #fff;
+    padding: 0 20px;
+    width: 100%;
+    background-blend-mode:lighten;
+    background-color: rgba(11,10, 15, 0.8);
+    position:fixed;
+    top:0;
+    left:0;
+    font-size:20px;
+
+}
+
+
+
+
+
+
+
+nav li {
+	float:left;	
+	padding:0.2cm 0.5cm;
+	display: inline-block;
+	text-align: center;
+	color:#fff;
+	text-decoration:none;
+}
+
+
+
+
+
+
+
+.header span {
+	position:absolute;
+	right:100px;
+	top:5px;
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-blend-mode:lighten;
+  background-color:rgba(11, 11, 11, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  
+  	
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+
+
+
 
