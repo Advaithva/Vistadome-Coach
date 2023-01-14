@@ -252,7 +252,7 @@ header {
 
 
 
-.navig li:hover {
+nav li:hover {
 	color:black;
 	border-bottom:#abbcff;
 	background-color:#eee;
