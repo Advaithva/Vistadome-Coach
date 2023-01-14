@@ -3,10 +3,11 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment:fixed;
-	line-height:3em;
-	overflow-y:scroll;
+    line-height:3em;
+    overflow-y:scroll;
     padding:0;
     margin:0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header {
