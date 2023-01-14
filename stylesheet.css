@@ -250,7 +250,9 @@ header {
 }
 
 
-
+nav li {
+	transition:all 1s;
+}
 
 nav li:hover {
 	color:black;
