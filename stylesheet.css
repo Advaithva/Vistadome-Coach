@@ -273,7 +273,7 @@ nav {
     padding: 0 20px;
     width: 100%;
     background-blend-mode:lighten;
-    background-color: rgba(11,10, 15, 0.8);
+    background-color: rgba(11,10, 15, 1);
     position:fixed;
     top:0;
     left:0;
