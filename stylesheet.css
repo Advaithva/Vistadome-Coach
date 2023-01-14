@@ -255,6 +255,7 @@ header {
 nav li:hover {
 	color:#abbcff;
 	border-bottom:#abbcff;
+	background-color:#eee;
 	
 }
 
