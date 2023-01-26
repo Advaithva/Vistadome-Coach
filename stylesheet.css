@@ -135,6 +135,7 @@ header {
 
 .main {
     background-color:rgba(51, 43, 43, 0.8);
+    background-attachment:fixed;
     padding:2cm 1cm 2cm 1cm;
     color:white;
     
